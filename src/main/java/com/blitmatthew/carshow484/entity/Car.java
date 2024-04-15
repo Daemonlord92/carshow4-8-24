@@ -32,4 +32,7 @@ public class Car {
     @ManyToOne
     @JsonIgnore
     private Owner owner;
+    //What is the difference between == and .equals() in Java?
+
+
 }
