@@ -25,4 +25,10 @@ public class CarController {
     public ResponseEntity<Car> postCar(@RequestBody Car car) {
         return new ResponseEntity<>(carService.addCar(car), HttpStatus.CREATED);
     }
+
+    @PutMapping("/")
+    public ResponseEntity<Car> updateCar(@RequestBody Car car) {
+        return new ResponseEntity<>(carService.updateCar(car), HttpStatus.OK);
+    }
+
 }
